@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 8% 0% 0%;
+	font-weight: 800;
+	font-size: 1rem;
+	text-decoration: none;
+	z-index: 10000;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+  	box-shadow: 0 4px 8px 0 skyblue;
+  transition: 0.3s;
+  background-color: rgba(73, 235, 252, 0.5);
+}
+
+#header-img {
+	height: 2%;
+	width: 5%;
+	cursor: pointer;
+}
+
+#nav-link {
+	list-style: none;
+	display: inline-block;
+	padding: 0 2em;
+	transition: all 0.3s ease 0s;
+}
+
+#nav-link button {
+	font-size: 1em;
+	font-weight: 1000;
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#nav-link:hover {
+	transform: scale(1.5);
+}
+
+#title {
+	text-align: center;
+	font-weight: 800;
+}
+
+#logo {
+	display: inline-block;
+}
+
+#logo li, a, button {
+	text-decoration: none;
+}
+
+#home {
+	width: 100%;
+	height: 0;
+	padding-bottom: 45%;
+	position: relative;
+}
+
+#home iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#specs {
+	border-top: 0;
+	margin-top: 0;
+	padding: 2%;
+	box-shadow: 0 4px 8px 0 skyblue;
+	transition: 0.3s;
+}
+
+#specs h1 {
+	text-align: center;
+	font-weight: 1000;
+	font-size: 10em;
+	letter-spacing: 5%;
+	font-style: italic;
+	color: rgba(73, 235, 252, 0.5);
+}
+
+#specs li {
+	display: inline-block;
+	font-size: 5em;
+	padding: 2%;
+	justify-content: center;
+	color: rgba(73, 235, 252, 0.5);
+}
+
+#contact {
+	box-shadow: 0 4px 8px 0 skyblue;
+	transition: 0.3s;
+	padding: 8%;
+	letter-spacing: 5%;
+	text-align: center;
+	font-size: 2em;
+	color: rgba(73, 235, 252, 1);
+}
+
+#form {
+	color: skyblue;
+	font-size: 2em;
+	display: inline-block;
+}
+
+#form label {
+	padding: 2% 0 0 0;
+}
+
+#form input {
+	height: 3em;
+	padding: 1%;
+	font-size: 0.3em;
+}
+
+#form button {
+	background-color: skyblue;
+	border: none;
+	font-size: 0.5em;
+	border-radius: 25px;
+	padding: 2%;
+}
+
+footer {
+	background-color: rgba(73, 235, 252, 1);
+	color: white;
+	box-shadow: 4px 0px 0px 8px rgba(73, 235, 252, 1);
+	transition: 0.3s;
+	width: 100%;
+}
+
+#para {
+	text-align: center;
+	padding: 2%;
+	font-size: 1.5em;
+}
