@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  text-shadow: 2px 2px 5% #ff0000;
 }
 
 body {
@@ -11,11 +13,11 @@ body {
 }
 
 header {
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0% 8% 0% 0%;
+  margin: 0% 0% 1% 0%;
+  padding:0.4%;
+ display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
   font-weight: 800;
   font-size: 1rem;
   text-decoration: none;
@@ -26,11 +28,19 @@ header {
   box-shadow: 0 4px 8px 0 skyblue;
   transition: 0.3s;
   background-color: rgba(73, 235, 252, 0.5);
+  backdrop-filter: blur(8px) invert(15%);
 }
 
-#header-img {
-  height: 1%;
-  width: 1%;
+#logo {
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:auto;
+  margin-left: 2%;
+}
+
+#header-img { 
+  display: inline-block;
+  width: 10%;
   cursor: pointer;
 }
 
@@ -38,7 +48,15 @@ header {
   list-style: none;
   display: inline-block;
   padding: 0 2em;
+  color: rgba(255, 255, 255, 0.78);
+  text-shadow: 2px 2px 1% black;
   transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
 
 .nav-link none;
@@ -46,18 +64,11 @@ header {
   cursor: pointer;
 }
 
-.nav-link:hover {
-  transform: scale(1.5);
-}
-
 #title {
   text-align: center;
   font-weight: 800;
 }
 
-#logo {
-  display: inline-block;
-}
 
 #logo li,
 a,
@@ -68,6 +79,7 @@ button {
 #home {
   width: 100%;
   height: 0;
+  margin-top: 1%;
   padding-bottom: 45%;
   position: relative;
 }
@@ -95,11 +107,21 @@ button {
   color: rgba(73, 235, 252, 0.5);
 }
 
+#specs ul {
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
 #specs li {
-  display: inline-block;
+  display: block;
+  justify-content: space-around;
+  margin: auto auto auto auto;
+  text-decoration: none;
   font-size: 5em;
   padding: 2%;
-  justify-content: center;
   color: rgba(73, 235, 252, 0.5);
 }
 
@@ -138,11 +160,18 @@ button {
 }
 
 footer {
-  background-color: rgba(73, 235, 252, 1);
-  color: white;
-  box-shadow: 4px 0px 0px 8px rgba(73, 235, 252, 1);
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  flex-wrap:wrap;
+  background-color: rgba(73, 235, 252, 0.5);
+  backdrop-filter: blur(8px) invert(15%);
+  color: yellow;
   transition: 0.3s;
   width: 100%;
+  margin: 0%;
 }
 
 #para {
@@ -152,7 +181,11 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
+  html {
+    font-size: 75%;
+  }
  iframe {
     min-width: 100%;
+   margin-top: 20%;
   }
 }
